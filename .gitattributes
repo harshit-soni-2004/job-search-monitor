@@ -1,0 +1,20 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout
+*.py text diff=python
+*.md text
+*.yaml text
+*.yml text
+*.txt text
+*.ps1 text
+*.bat text eol=crlf
+
+# Ensure shell scripts always keep LF line endings for WSL/Linux compatibility
+*.sh text eol=lf
+
+# Declare binary files
+*.xlsx binary
+*.png binary
+*.jpg binary

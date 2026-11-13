@@ -1,0 +1,21 @@
+# Job Search Monitor Configuration
+# ==================================
+
+# Path to the Excel workbook containing Sources and Matches sheets.
+# Relative to the project folder or absolute path.
+workbook_path: "job_search.xlsx"
+
+# Daily run time when running in continuous scheduler mode (--schedule).
+# 24-hour format (HH:MM). For Windows Task Scheduler / Cron, see setup guide.
+schedule_time: "09:00"
+
+# Network & Polite Crawling Settings
+request_timeout: 15        # Timeout per HTTP request in seconds
+rate_limit_delay: 1.0      # Polite delay between requests in seconds
+user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (JobSearchMonitor/1.0; Public Careers Checker)"
+
+# Logging Settings
+log_level: "INFO"          # DEBUG, INFO, WARNING, ERROR
+log_dir: "logs"            # Directory for dated log files
+save_daily_summary_log: true # Keeps an aggregated record of daily summaries in logs/daily_summaries.log
+
